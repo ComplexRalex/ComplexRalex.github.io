@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "title": "Gaming content",
+            "desc": "Information about my gaming content.... not done yet",
+            "image": {
+                "url": "https://i.imgur.com/n8TJn9z.png",
+                "title": "Ralex playing Minecraft",
+                "alt": "A screenshot of Ralex in a Minecraft World"
+            },
+            "social": [
+                "youtube",
+                "twitch",
+                "facebook",
+                "twitter"
+            ]
+        },
+        {
+            "title": "Personal",
+            "desc": "Information about myself, including videogames I play...",
+            "image": {
+                "url": "https://i.imgur.com/dzpdAk3.png",
+                "title": "Ralex coding, drawing, and editing stuff",
+                "alt": "Three screenshots. 1: coding something, 2: drawing an avatar, 3: editing and image"
+            },
+            "social": [
+                "twitter",
+                "bandcamp",
+                "steam"
+            ]
+        },
+        {
+            "title": "Coding projects",
+            "desc": "As mentioned above, my code projects are important to me, even more than my health (somethimes)",
+            "image": {
+                "url": "https://i.imgur.com/W6A1urY.png",
+                "title": "Completed-Games Registers project",
+                "alt": "An screenshot showing my program called 'Completed-Games Registers'"
+            },
+            "social": [
+                "github"
+            ]
+        }
+    ]
+}

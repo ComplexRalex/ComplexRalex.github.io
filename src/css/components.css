@@ -1,3 +1,11 @@
+/* Title */
+
+p.page-title {
+    text-align: center;
+}
+
+/* Logo */
+
 img.logo {
     display: block;
     max-width: 300px;
@@ -6,10 +14,23 @@ img.logo {
     margin-right: auto;
 }
 
-p.js {
-    text-align: center;
+/* Card */
+
+img.img-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-p span.js {
-    color: rgb(255, 255, 112);
+img.circle-sn {
+    width: 35px;
+    height: 35px;
+}
+
+a.circle-link + a.circle-link {
+    margin-left: 10px;
+}
+
+div.card + div.card {
+    margin-top: 20px;
 }
