@@ -15,20 +15,21 @@ img.logo {
     margin-right: auto;
 }
 
-/* About & Contact sections */
+/* Sections */
 
-div.about {
+div.div-content {
     padding: 16px;
     display: block;
     overflow: hidden;
+    border-radius: 15px;
 }
 
-p.about {
+p.div-content {
     font-size: larger;
 }
 
-@media screen and (max-width: 1200px) {p.about {font-size: large;}}
-@media screen and (max-width: 992px) {p.about {font-size: inherit;}}
+@media screen and (max-width: 1200px) {p.div-content {font-size: large;}}
+@media screen and (max-width: 992px) {p.div-content {font-size: inherit;}}
 
 img.profile-pic {
     float: right;
@@ -44,6 +45,10 @@ img.profile-pic {
         margin-bottom: 15px;
         width: 100%;
     }
+}
+
+.section-title {
+    text-align: center;
 }
 
 section.viewport > div {
@@ -101,6 +106,13 @@ section.viewport {
     }
 }
 
+/* Hardcoded... forget me, lord */
+@media screen and (max-height: 600px) {
+    section.viewport + section.viewport {
+        height: auto;
+    }
+}
+
 section.vp-head::after {
     background: rgb(33,44,52);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%),
@@ -146,4 +158,4 @@ main {
     transform: translateZ(-1px) scale(1.4);
     background-size: 100%;
     z-index: -1;
-  }
+}

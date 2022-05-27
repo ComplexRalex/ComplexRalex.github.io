@@ -5,13 +5,14 @@ const me = data.data;
 const createAbout = () => {
     const element = document.createElement("div");
     element.innerHTML = `
-      <div class="text-white bg-dark about">
-          <img src="${me.image.url}" class="rounded profile-pic shadow-lg" alt="...">
+      <p class="fs-2 section-title">${me["about-msg"].replaceAll('\n','<br>')}</p>
+      <div class="text-white bg-dark div-content">
+          <img src="${me.image.url}" class="rounded profile-pic" alt="...">
           <p class="about">${me.bio.replaceAll('\n','<br>')}</p>
       </div>
       `;
   
-    return element.firstElementChild;
+    return element;
 };
 
 export { createAbout };

@@ -6,8 +6,8 @@ const me = data.data;
 const createContact = () => {
     const element = document.createElement("div");
     element.innerHTML = `
-      <div class="text-white bg-dark about text-center">
-          <p class="fs-3">${me.contact.replaceAll('\n','<br>')}</p>
+      <p class="fs-2 section-title">${me["contact-msg"].replaceAll('\n','<br>')}</p>
+      <div class="text-white bg-dark div-content text-center">
           <p class="fs-5 text-break">Email: <a href="mailto:${me.email}">${me.email}</a></p>
           <div class="mt-4">
             ${mapIcons(me.social,'circle-sn-m','rounded-3')}
@@ -15,7 +15,7 @@ const createContact = () => {
       </div>
       `;
   
-    return element.firstElementChild;
+    return element;
 };
 
 export { createContact };
