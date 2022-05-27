@@ -19,6 +19,8 @@ img.logo {
 
 div.about {
     padding: 16px;
+    display: block;
+    overflow: hidden;
 }
 
 p.about {
@@ -31,7 +33,6 @@ p.about {
 img.profile-pic {
     float: right;
     margin-left: 15px;
-    margin-bottom: 15px;
     min-width: 150px;
     width: 28%;
 }
@@ -42,6 +43,11 @@ img.profile-pic {
         margin-left: 0%;
         width: 100%;
     }
+}
+
+section.viewport > div {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* Social Media Card */
@@ -72,3 +78,71 @@ a.circle-link + a.circle-link {
     margin-left: 10px;
 }
 
+/* Viewport section */
+
+section.viewport:first-child {
+    height: 100vh;
+}
+
+section.viewport {
+    width: calc(100vw - (100vw - 100%));
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+@media screen and (min-width: 768px) {
+    section.viewport {
+        height: 100vh;
+    }
+}
+
+section.vp-head::after {
+    background: rgb(33,44,52);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%),
+        url('https://i.imgur.com/VOvptOF.png');
+    background-size: cover;
+    background-position: center;
+}
+
+section.vp-about {
+    background: rgb(18, 25, 29);
+    z-index: 1;
+}
+
+section.vp-contents::after {
+    background: rgb(33,44,52);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%),
+        url('https://i.imgur.com/n8TJn9z.png');
+    background-size: cover;
+    background-position: center;
+}
+
+section.vp-contact {
+    background: rgb(21, 24, 29);
+    z-index: 1;
+}
+
+/* Extra */
+
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 3px;
+}
+
+.parallax::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.4);
+    background-size: 100%;
+    z-index: -1;
+  }

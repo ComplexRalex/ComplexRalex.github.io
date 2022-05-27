@@ -1,9 +1,9 @@
 {
     "data": {
         "name": "Alejandro Batres",
-        "bio": "I'm Alejandro Batres. I'm a 'random' software developer, I'm studying Engineering in Computer Science and I've done many projects during my career.\n\nI'm still learning programming languages and improving my skills in the other ones.",
+        "bio": "I'm a 'random' software developer, I'm studying Engineering in Computer Science and I've done many projects during my career.\n\nI'm still learning and improving my dev skills in programming languages like C, C++, Java, Python, and recently JavaScript.\n\nBy the way, if you are reading this right now, let me tell you that this page is still in construction, lol.",
         "image": {
-            "url": "./assets/img/about/me.png",
+            "url": "./assets/img/about/default.png",
             "title": "Ralex' seflie",
             "alt": "A frontal photo of Alejandro Batres"
         },

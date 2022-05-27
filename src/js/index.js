@@ -3,34 +3,45 @@ import cardInfo from "../assets/json/cards.json";
 
 import { createLogoImage } from "./logo";
 import { createTitle } from "./title";
-import { createObject } from './test';
+import { createObject } from "./test";
 import { createSocialMediaCard } from "./sm-card";
 import { createAbout } from "./about";
 import { createContact } from "./contact";
+import { createViewportSection } from "./viewport-section";
+
+const main = document.body.querySelector('main');
 
 const createMainPage = () => {
-  const container = document.createElement("div");
-  container.classList.add("container", "mt-5");
-
   const image = createLogoImage();
-  container.appendChild(image);
-
   const title = createTitle();
-  container.appendChild(title);
+  const headVP = createViewportSection(createContainer([image, title]));
+  headVP.classList.add('vp-head', 'parallax');
+  main.appendChild(headVP);
 
   const about = createAbout();
-  container.appendChild(about);
-
+  const aboutVP = createViewportSection(createContainer([about]));
+  aboutVP.classList.add('vp-about');
+  main.appendChild(aboutVP);
+  
   const cards = cardInfo["data"];
-  cards.forEach((c) => container.appendChild(createSocialMediaCard(c)));
+  const contentsVP = createViewportSection(createContainer(cards.map(c => createSocialMediaCard(c))));
+  contentsVP.classList.add('vp-contents', 'parallax');
+  main.appendChild(contentsVP);
+  
+  const contact = createContact();
+  const contactVP = createViewportSection(createContainer([contact]));
+  contactVP.classList.add('vp-contact');
+  main.appendChild(contactVP);
 
-//   const object = createObject();
-//   container.appendChild(object);
+  // document.body.appendChild(container);
+};
 
-    const contact = createContact();
-    container.appendChild(contact);
+const createContainer = (elements) => {
+  const container = document.createElement("div");
+  container.classList.add("container","align-middle");
+  elements.forEach((element) => container.appendChild(element));
 
-  document.body.appendChild(container);
+  return container;
 };
 
 export { createMainPage as init };
