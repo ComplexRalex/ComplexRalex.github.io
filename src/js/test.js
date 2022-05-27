@@ -1,21 +1,13 @@
-import image from '../assets/img/logo.png';
+import data from "../assets/json/about.json";
+
+const me = data.data;
 
 const createObject = () => {
   const element = document.createElement("div");
   element.innerHTML = `
-    <div class="card mb-3 text-white bg-dark">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src="${image}" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-        </div>
+    <div class="text-white bg-dark about">
+        <img src="${me.image.url}" class="rounded profile-pic shadow-lg" alt="...">
+        <p class="about">${me.bio.replaceAll('\n','<br>')}</p>
     </div>
     `;
 

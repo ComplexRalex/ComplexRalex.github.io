@@ -1,0 +1,15 @@
+{
+    "data": {
+        "name": "Alejandro Batres",
+        "bio": "I'm Alejandro Batres. I'm a 'random' software developer, I'm studying Engineering in Computer Science and I've done many projects during my career.\n\nI'm still learning programming languages and improving my skills in the other ones.",
+        "image": {
+            "url": "./assets/img/about/me.png",
+            "title": "Ralex' seflie",
+            "alt": "A frontal photo of Alejandro Batres"
+        },
+        "contact": "<i>Wanna</i> contact me?",
+        "phone": "",
+        "email": "alejandro.batres37@gmail.com",
+        "social": ["linkedin", "twitter"]
+    }
+}

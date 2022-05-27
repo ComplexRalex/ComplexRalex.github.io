@@ -1,19 +1,8 @@
-import "../css/components.css";
-import snInfo from "../assets/json/social-networks.json";
+import { dummySNName, mapIcons } from "./sn-circle";
 
 import defaultImg from "../assets/img/card/default.png";
-import defaultSN from "../assets/img/sn/default.png";
 
-const socialNetworks = snInfo.data;
-const dummySNName = "$dummy";
-const dummySN = {
-  name: "Something",
-  title: "Something website",
-  image: defaultSN,
-  url: "#",
-};
-
-const createCard = ({
+const createSocialMediaCard = ({
   title = "Card title",
   desc = "Card description",
   image = { url: defaultImg, title: "None", alt: "None" },
@@ -47,22 +36,4 @@ const createCard = ({
   return card.firstElementChild;
 };
 
-const mapIcons = (social) => {
-  let allIcons = "";
-  social.forEach((s) => {
-    const sn = (s === dummySNName ? dummySN : socialNetworks[s]);
-    allIcons += `<a
-      class="circle-link"
-      href="${sn.url}"
-      target="_blank"
-    ><img
-      src="${sn.image}"
-      title="${sn.title}"
-      alt="${sn.name} logo"
-      class="circle-sn rounded-circle"
-    ></a>`;
-  });
-  return allIcons;
-};
-
-export { createCard };
+export { createSocialMediaCard };

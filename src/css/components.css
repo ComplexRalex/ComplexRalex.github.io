@@ -1,6 +1,6 @@
 /* Title */
 
-p.page-title {
+h1.page-title {
     text-align: center;
 }
 
@@ -8,13 +8,43 @@ p.page-title {
 
 img.logo {
     display: block;
-    max-width: 300px;
-    width: 100%;
+    max-width: 250px;
+    min-width: 125px;
+    width: calc(20vw);
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Card */
+/* About & Contact sections */
+
+div.about {
+    padding: 16px;
+}
+
+p.about {
+    font-size: larger;
+}
+
+@media screen and (max-width: 1200px) {p.about {font-size: large;}}
+@media screen and (max-width: 992px) {p.about {font-size: inherit;}}
+
+img.profile-pic {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    min-width: 150px;
+    width: 28%;
+}
+
+@media screen and (max-width: 380px) {
+    img.profile-pic {
+        float: none;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Social Media Card */
 
 img.img-thumb {
     width: 100%;
@@ -22,15 +52,23 @@ img.img-thumb {
     object-fit: cover;
 }
 
+div.card + div.card {
+    margin-top: 20px;
+}
+
+/* Social Network Circle */
+
 img.circle-sn {
     width: 35px;
     height: 35px;
+}
+
+img.circle-sn-m {
+    width: 45px;
+    height: 45px;
 }
 
 a.circle-link + a.circle-link {
     margin-left: 10px;
 }
 
-div.card + div.card {
-    margin-top: 20px;
-}

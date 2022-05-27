@@ -1,9 +1,9 @@
 const createTitle = () => {
   const title = document.createElement("p");
   title.innerHTML = `
-    <p class="page-title mt-5">
-      Página de presentación en mantenimiento...
-    </p>`;
+    <h1 class="page-title mt-3">
+      Alejandro Batres
+    </h1>`;
 
   return title;
 };
