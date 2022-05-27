@@ -1,0 +1,52 @@
+{
+    "data": {
+        "facebook": {
+            "name": "Facebook",
+            "title": "MrAlexbross' Facebook page",
+            "image": "./assets/img/sn/facebook-center.png",
+            "url": "https://www.facebook.com/MrAlexbross/"
+        },
+        "twitter": {
+            "name": "Twitter",
+            "title": "ComplexRalex' Twitter profile",
+            "image": "./assets/img/sn/twitter.png",
+            "url": "https://twitter.com/ComplexRalex"
+        },
+        "youtube": {
+            "name": "YouTube",
+            "title": "MrAlexbross' YouTube channel",
+            "image": "./assets/img/sn/youtube.png",
+            "url": "https://www.youtube.com/user/MrAlexbross"
+        },
+        "twitch": {
+            "name": "Twitch",
+            "title": "MrAlexbross' Twitch channel",
+            "image": "./assets/img/sn/twitch.png",
+            "url": "https://www.twitch.tv/MrAlexbross/"
+        },
+        "bandcamp": {
+            "name": "Bandcamp",
+            "title": "MrAlexbross' Bandcamp profile",
+            "image": "./assets/img/sn/bandcamp.png",
+            "url": "https://bandcamp.com/mralexbross"
+        },
+        "steam": {
+            "name": "Steam",
+            "title": "MrAlexbross' Steam profile",
+            "image": "./assets/img/sn/steam.png",
+            "url": "https://steamcommunity.com/id/mralexbross/"
+        },
+        "github": {
+            "name": "Github",
+            "title": "ComplexRalex' Github profile",
+            "image": "./assets/img/sn/github.png",
+            "url": "https://github.com/ComplexRalex"
+        },
+        "linkedin": {
+            "name": "LinkedIn",
+            "title": "Alejandro's LinkedIn profile",
+            "image": "./assets/img/sn/linkedin.png",
+            "url": "https://www.linkedin.com/in/alejandro-b-5516a2128/"
+        }
+    }
+}
