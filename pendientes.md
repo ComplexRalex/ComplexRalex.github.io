@@ -6,8 +6,8 @@
 <!-- * extender bio -->
 <!-- * extender información en la sección de contenidos -->
 <!-- * mejorar de alguna forma la sección de contacto [No sé que más poner xDD] -->
-* agregar navbar
-* agregar footer
+<!-- * agregar navbar -->
+<!-- * agregar footer -->
 <!-- * resolver bug de que el viewport al menos debería ser el tamaño de los componentes internos -->
 * agregar sombras a cards y divs
 * cambiar colores de enlaces y esas cosas con CSS
