@@ -8,7 +8,7 @@ const createAbout = () => {
       <p class="fs-2 section-title">${me["about-msg"].replaceAll('\n','<br>')}</p>
       <div class="text-white bg-dark div-content">
           <img src="${me.image.url}" class="rounded profile-pic" alt="...">
-          <p class="about">${me.bio.replaceAll('\n','<br>')}</p>
+          ${me.bio.replaceAll('\n','<br>').replaceAll('<p>','<p class="div-content">')}
       </div>
       `;
   

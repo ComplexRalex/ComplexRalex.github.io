@@ -20,24 +20,28 @@ const createMainPage = () => {
   const image = createLogoImage();
   const title = createTitle();
   const headVP = createViewportSection(createContainer([image, title]));
+  headVP.id = 'head';
   headVP.classList.add('vp-head', 'parallax');
   main.appendChild(headVP);
 
   // About
   const about = createAbout();
   const aboutVP = createViewportSection(createContainer([about]));
+  aboutVP.id = 'about';
   aboutVP.classList.add('vp-about');
   main.appendChild(aboutVP);
   
   // Contents
   const cards = createSocialContents();
   const contentsVP = createViewportSection(createContainer([cards]));
+  contentsVP.id = "contents";
   contentsVP.classList.add('vp-contents', 'parallax');
   main.appendChild(contentsVP);
   
   // Contact
   const contact = createContact();
   const contactVP = createViewportSection(createContainer([contact]));
+  contact.id = "contact";
   contactVP.classList.add('vp-contact');
   main.appendChild(contactVP);
 
