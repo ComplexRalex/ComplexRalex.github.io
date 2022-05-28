@@ -1,10 +1,40 @@
 {
     "data": {
         "title-navbar": "Alejandro Batres",
-        "title-about": "Who am I?",
-        "title-contents": "What have I <i>done</i>?",
-        "title-contact": "<i>Wanna</i> contact me?",
+        "sections": {
+            "root": {
+                "name": "Root",
+                "id": "root",
+                "title": "This is the root"
+            },
+            "about": {
+                "name": "About",
+                "id": "about",
+                "title": "Who am I?"
+            },
+            "contents": {
+                "name": "Contents",
+                "id": "contents",
+                "title": "What have I <i>done</i>?"
+            },
+            "contact": {
+                "name": "Contact",
+                "id": "contact",
+                "title": "<i>Wanna</i> contact me?"
+            }
+        },
         "title-footer": "Alejandro Batres. 2022.",
+        "avatar-navbar": {
+            "url": "./assets/img/logo.png",
+            "title": "It's me, Ralex!",
+            "alt": "My avatar (called 'Ralex')"
+        },
+        "img-navbar-url": "https://github.com/ComplexRalex",
+        "img-navbar": {
+            "url": "./assets/img/sn/github.png",
+            "title": "Check out my Github profile!",
+            "alt": "Github icon"
+        },
         "img-footer-url": "https://github.com/ComplexRalex/ComplexRalex.github.io",
         "img-footer": {
             "url": "./assets/img/sn/github.png",

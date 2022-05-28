@@ -4,14 +4,14 @@ import cardInfo from "../assets/json/cards.json";
 
 import { createSocialMediaCard } from './sm-card';
 
-const info = generalData.data;
+const info = generalData.data.sections['contents'];
 const me = personalData.data;
 
 const cards = cardInfo["data"];
 
 const createSocialContents = () => {
     const element = document.createElement('div');
-    element.innerHTML = `<p class="fs-2 section-title">${info["title-contents"].replaceAll('\n','<br>')}</p>`;
+    element.innerHTML = `<p class="fs-2 section-title">${info["title"].replaceAll('\n','<br>')}</p>`;
     cards.forEach(c => element.appendChild(createSocialMediaCard(c)));
 
     return element;

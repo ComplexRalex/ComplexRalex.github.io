@@ -1,3 +1,19 @@
+/* Navbar */
+
+header nav{
+    background-color: rgb(44, 45, 48);
+}
+
+nav .avatar {
+    filter: contrast(0%) brightness(2);
+    width: 30px;
+    margin-bottom: 2%;
+}
+
+nav .github {
+    width: 40px;
+}
+
 /* Title */
 
 h1.page-title {
@@ -94,19 +110,11 @@ a.circle-link + a.circle-link {
     align-items: center;
     justify-content: center;
     display: flex;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-@media screen and (min-width: 768px) {
-    section.viewport {
-        height: fit-content
-    }
 }
 
 /* All sections */
 
-section.vp-head::after {
+section.vp-head {
     background: rgb(33,44,52);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%),
         url('https://i.imgur.com/VOvptOF.png');
@@ -116,10 +124,9 @@ section.vp-head::after {
 
 section.vp-about {
     background: rgb(18, 25, 29);
-    z-index: 1;
 }
 
-section.vp-contents::after {
+section.vp-contents {
     background: rgb(33,44,52);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%),
         url('https://i.imgur.com/n8TJn9z.png');
@@ -130,7 +137,6 @@ section.vp-contents::after {
 section.vp-contact {
     background: rgb(21, 24, 29);
     min-height: calc(100% - 180px);
-    z-index: 1;
 }
 
 /* Footer */
@@ -138,7 +144,8 @@ section.vp-contact {
 footer.vp-footer {
     background: rgb(23, 21, 22);
     min-height: 180px;
-    z-index: 1;
+    position: absolute;
+
 }
 
 img.footer-img {
@@ -147,21 +154,6 @@ img.footer-img {
 
 /* Extra */
 
-main {
+body {
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 3px;
-}
-
-.parallax::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(1.4);
-    background-size: 100%;
-    z-index: -1;
 }
