@@ -1,15 +1,15 @@
 import "../css/components.css";
 
 import { createLogoImage } from "./logo";
+import { createContainer } from "./container.js";
 import { createTitle } from "./title";
 import { createAbout } from "./about";
 import { createContact } from "./contact";
 import { createViewportSection } from "./viewport-section";
 import { createSocialContents } from "./social-contents";
+import { createFooter } from "./footer";
 
-const header = document.body.querySelector('header');
 const main = document.body.querySelector('main');
-const footer = document.body.querySelector('footer');
 
 const createMainPage = () => {
   // Header
@@ -41,18 +41,14 @@ const createMainPage = () => {
   // Contact
   const contact = createContact();
   const contactVP = createViewportSection(createContainer([contact]));
-  contact.id = "contact";
+  contactVP.id = "contact";
   contactVP.classList.add('vp-contact');
   main.appendChild(contactVP);
-
-};
-
-const createContainer = (elements) => {
-  const container = document.createElement("div");
-  container.classList.add("container","align-middle");
-  elements.forEach((element) => container.appendChild(element));
-
-  return container;
+  
+  // Footer
+  
+  const footer = createFooter();
+  main.appendChild(footer);
 };
 
 export { createMainPage as init };

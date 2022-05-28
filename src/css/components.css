@@ -49,6 +49,7 @@ img.profile-pic {
 
 .section-title {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 section.viewport > div {
@@ -65,7 +66,7 @@ img.img-thumb {
 }
 
 div.card + div.card {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Social Network Circle */
@@ -86,7 +87,7 @@ a.circle-link + a.circle-link {
 
 /* Viewport section */
 
-section.viewport {
+.viewport {
     width: calc(100vw - (100vw - 100%));
     height: auto;
     min-height: 100%;
@@ -102,6 +103,8 @@ section.viewport {
         height: fit-content
     }
 }
+
+/* All sections */
 
 section.vp-head::after {
     background: rgb(33,44,52);
@@ -126,15 +129,20 @@ section.vp-contents::after {
 
 section.vp-contact {
     background: rgb(21, 24, 29);
-    /* min-height: calc(100% - 100px); */
-    min-height: 80%;
+    min-height: calc(100% - 180px);
     z-index: 1;
 }
 
-footer.footer {
-    background: rgb(21, 24, 29);
-    min-height: 20%;
+/* Footer */
+
+footer.vp-footer {
+    background: rgb(23, 21, 22);
+    min-height: 180px;
     z-index: 1;
+}
+
+img.footer-img {
+    width: 100px;
 }
 
 /* Extra */

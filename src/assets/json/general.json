@@ -1,0 +1,15 @@
+{
+    "data": {
+        "title-navbar": "Alejandro Batres",
+        "title-about": "Who am I?",
+        "title-contents": "What have I <i>done</i>?",
+        "title-contact": "<i>Wanna</i> contact me?",
+        "title-footer": "Alejandro Batres. 2022.",
+        "img-footer-url": "https://github.com/ComplexRalex/ComplexRalex.github.io",
+        "img-footer": {
+            "url": "./assets/img/sn/github.png",
+            "title": "Check out my website's repository on Github!",
+            "alt": "Github icon"
+        }
+    }
+}
