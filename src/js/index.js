@@ -28,7 +28,7 @@ const createMainPage = () => {
   const title = createTitle();
   const rootVP = createViewportSection(createContainer([image, title]));
   rootVP.id = sectionInfo.root.id;
-  rootVP.classList.add("vp-head");
+  rootVP.classList.add("vp-root");
   body.appendChild(rootVP);
 
   // About
@@ -58,43 +58,8 @@ const createMainPage = () => {
   body.appendChild(footer);
 };
 
-const addEvents = () => {
-  const root = document.querySelector(".vp-head");
-  const about = document.querySelector(".vp-about");
-  const contents = document.querySelector(".vp-contents");
-  // const contact = document.querySelector('.vp-contact'); // Not necessary
-
-  window.addEventListener("scroll", () => {
-    let viewportHeight = window.innerHeight;
-    let rootHeight = root.clientHeight;
-    let aboutHeight = about.clientHeight;
-    let contentsHeight = contents.clientHeight;
-    // let contactHeight = contact.clientHeight
-
-    let value = window.scrollY;
-    let maxHeight = rootHeight;
-    let minHeight = 0;
-
-    // vp-head parallax
-    if (value <= maxHeight) {
-      root.style.backgroundPosition = `50% ${value * 0.25}px`;
-    }
-
-    // Adds vp-about height's
-    maxHeight += aboutHeight;
-
-    // vp-head parallax
-    minHeight = maxHeight - aboutHeight;
-    maxHeight += contentsHeight;
-    if (value > minHeight && value <= maxHeight) {
-      contents.style.backgroundPosition = `50% ${(value - maxHeight + contentsHeight) * 0.25}px`;
-    }
-  });
-};
-
 const init = () => {
   createMainPage();
-  addEvents();
 };
 
-export { createMainPage, init };
+export { init };

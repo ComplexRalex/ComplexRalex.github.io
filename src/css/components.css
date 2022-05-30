@@ -114,12 +114,12 @@ a.circle-link + a.circle-link {
 
 /* All sections */
 
-section.vp-head {
+section.vp-root {
     background: black;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
         url('../assets/img/bg/pc.jpg');
     background-size: cover;
-    background-position: 50% 0px;
+    background-position: 50% 50%;
 }
 
 section.vp-about {
@@ -131,7 +131,7 @@ section.vp-contents {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
         url('../assets/img/bg/lap.jpg');
     background-size: cover;
-    background-position: 50% 0px;
+    background-position: 50% 50%;
 }
 
 section.vp-contact {
