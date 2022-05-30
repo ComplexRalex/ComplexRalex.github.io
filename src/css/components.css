@@ -116,8 +116,8 @@ a.circle-link + a.circle-link {
 
 section.vp-head {
     background: black;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-        url('../assets/img/bg/tech.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
+        url('../assets/img/bg/pc.jpg');
     background-size: cover;
     background-position: 50% 0px;
 }
@@ -128,8 +128,8 @@ section.vp-about {
 
 section.vp-contents {
     background: rgb(33,44,52);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-        url('../assets/img/bg/ralex.png');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
+        url('../assets/img/bg/lap.jpg');
     background-size: cover;
     background-position: 50% 0px;
 }

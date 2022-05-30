@@ -86,7 +86,6 @@ const addEvents = () => {
     // vp-head parallax
     minHeight = maxHeight - aboutHeight;
     maxHeight += contentsHeight;
-    let delta = contentsHeight - viewportHeight;
     if (value > minHeight && value <= maxHeight) {
       contents.style.backgroundPosition = `50% ${(value - maxHeight + contentsHeight) * 0.25}px`;
     }

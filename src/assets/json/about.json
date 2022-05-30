@@ -6,7 +6,7 @@
         "phone": "",
         "social": ["linkedin", "twitter"],
         "image": {
-            "url": "./assets/img/about/default.png",
+            "url": "./assets/img/about/me.png",
             "title": "Ralex' seflie",
             "alt": "A frontal photo of Alejandro Batres"
         }
