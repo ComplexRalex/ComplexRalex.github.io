@@ -10,7 +10,7 @@ const createSocialMediaCard = ({
 }) => {
   const card = document.createElement("div");
   card.innerHTML = `
-    <div class="card text-white bg-dark">
+    <div class="card text-white bg-dark box-shadow">
         <div class="row g-0">
             <div class="col-md-4">
                 <img

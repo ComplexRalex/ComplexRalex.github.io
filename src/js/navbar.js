@@ -7,7 +7,7 @@ const github = data["img-navbar"];
 const createNavbar = () => {
     const div = document.createElement('div');
     div.innerHTML = `
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top box-shadow">
       <div class="container">
         <a class="navbar-brand" href="#${data.sections.root.id}">
           <img class="avatar" src="${avatar.url}" title="${avatar.title}" alt="${avatar.alt}" />

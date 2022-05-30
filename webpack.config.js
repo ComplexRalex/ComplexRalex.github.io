@@ -27,9 +27,13 @@ module.exports = {
         test: /styles.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/,
+      //   loader: "file-loader",
+      // },
       {
-        test: /\.(png|jpe?g|gif)$/,
-        loader: "file-loader",
+        test: /\.(jpg|png|svg|gif)$/,
+        type: "asset/resource",
       },
     ],
   },
@@ -46,9 +50,7 @@ module.exports = {
       filename: "[name].css",
     }),
     new CopyPlugin({
-      patterns: [
-        { from: "src/assets/", to: "assets" }
-      ],
+      patterns: [{ from: "src/assets/", to: "assets" }],
     }),
   ],
 };
