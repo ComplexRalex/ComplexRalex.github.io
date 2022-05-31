@@ -1,5 +1,11 @@
 {
     "data": {
+        "mralexbross-web": {
+            "name": "MrAlexbross Web",
+            "title": "MrAlexbross' Official Website",
+            "image": "./assets/img/sn/mralexbross-web.png",
+            "url": "https://mralexbross-web.blogspot.com/"
+        },
         "facebook": {
             "name": "Facebook",
             "title": "MrAlexbross' Facebook page",
