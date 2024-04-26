@@ -1,12 +1,24 @@
 {
     "data": [
         {
+            "title": "Coding projects",
+            "desc": "As part of my growth as a programmer, I also have a <b>Github account</b> where I upload <b>programming projects</b> that I've done on my own and with friends. I maintain important projects like <a href='https://github.com/ComplexRalex/Completed-Games-Registers' target='_blank'><b>Completed-Games Registers (Java)</b></a> and <a href='https://github.com/ComplexRalex/BumperKartZ-VS' target='_blank'><b>Bumper KartZ VS (C++ OpenGL)</b></a>.",
+            "image": {
+                "url": "./assets/img/card/coding.png",
+                "title": "Screenshot of my Github account showing some repos",
+                "alt": "An Screenshot of my Github account showing some of my repositories"
+            },
+            "social": [
+                "github"
+            ]
+        },
+        {
             "title": "Gaming content",
             "desc": "I have a YouTube channel called <strong>MrAlexbross</strong> where I upload videos about <b>videogames</b>, especially gameplays. Also, I have a Twitch channel where I sometimes do streams. I publish updates about new videos on my Facebook and Twitter pages. Besides, I've done videogame content like <b>Minecraft</b> maps and <b>Geometry Dash</b>, <b>64.0</b>, and <b>Super Mario Maker 2</b> levels.",
             "image": {
                 "url": "./assets/img/card/gaming.png",
-                "title": "Ralex playing Minecraft",
-                "alt": "A screenshot of Ralex in a Minecraft World"
+                "title": "MrAlexbross Youtube channel's cover",
+                "alt": "A cover image for my YouTube channel 'MrAlexbross'"
             },
             "social": [
                 "mralexbross-web",
@@ -21,25 +33,13 @@
             "desc": "I usually share on Twitter other types of information that are not necessarily related to my YouTube channel, such as my <b>programming projects</b> or something <b>about me</b>. I also have a Bandcamp account where I show off the <b>music</b> I'm listening to, and I also have a Steam account where you can see the latest stuff I've been <b>playing</b>.",
             "image": {
                 "url": "./assets/img/card/personal.png",
-                "title": "Ralex coding, drawing, and editing stuff",
-                "alt": "Three screenshots. 1: coding something, 2: drawing an avatar, 3: editing and image"
+                "title": "Just some random drawings",
+                "alt": "A photo of my notebook with some random drawings of my character called 'Ralex' on it"
             },
             "social": [
                 "twitter",
                 "bandcamp",
                 "steam"
-            ]
-        },
-        {
-            "title": "Coding projects",
-            "desc": "As part of my growth as a programmer, I also have a <b>Github account</b> where I upload <b>programming projects</b> that I've done on my own and with friends. I maintain important projects like <a href='https://github.com/ComplexRalex/Completed-Games-Registers' target='_blank'><b>Completed-Games Registers (Java)</b></a> and <a href='https://github.com/ComplexRalex/BumperKartZ-VS' target='_blank'><b>Bumper KartZ VS (C++ OpenGL)</b></a>.",
-            "image": {
-                "url": "./assets/img/card/coding.png",
-                "title": "Completed-Games Registers project",
-                "alt": "An screenshot showing my program called 'Completed-Games Registers'"
-            },
-            "social": [
-                "github"
             ]
         }
     ]

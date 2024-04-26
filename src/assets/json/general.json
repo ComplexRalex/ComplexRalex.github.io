@@ -10,20 +10,20 @@
             "about": {
                 "name": "About",
                 "id": "about",
-                "title": "Who am I?"
+                "title": "<span style='font-family: monospace;'>$> whoami</span>"
             },
             "contents": {
                 "name": "Contents",
                 "id": "contents",
-                "title": "What have I <i>done</i>?"
+                "title": "What do I <i>do</i>?"
             },
             "contact": {
                 "name": "Contact",
                 "id": "contact",
-                "title": "<i>Wanna</i> contact me?"
+                "title": "Are you looking for me?"
             }
         },
-        "title-footer": "Alejandro Batres. 2022.",
+        "title-footer": "Alejandro Batres. 2024.",
         "avatar-navbar": {
             "url": "./assets/img/logo.png",
             "title": "It's me, Ralex!",
