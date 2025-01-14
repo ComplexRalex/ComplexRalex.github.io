@@ -10,7 +10,7 @@
             "about": {
                 "name": "About",
                 "id": "about",
-                "title": "<span style='font-family: monospace;'>$> whoami</span>"
+                "title": "<span style='font-family: monospace;'>$&gt; whoami</span>"
             },
             "contents": {
                 "name": "Contents",
