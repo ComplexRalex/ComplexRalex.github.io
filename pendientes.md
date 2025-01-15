@@ -23,3 +23,4 @@
 * agregar sección separada de portafolio y quitar eso de "coding projects". Esta sección iría antes.
 * agregar icono abajo a la derecha que indique que se puede scrollear (en la portada nada más)
 * se podrá cambiar el scrollbar? XD
+* agregar patrón en fondo de las secciones que solo tienen color plano
