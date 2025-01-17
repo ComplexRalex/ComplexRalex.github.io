@@ -4,10 +4,71 @@ header nav {
     background-color: rgb(44, 45, 48);
 }
 
+nav .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
 nav .avatar {
     filter: contrast(0%) brightness(2);
     width: 30px;
-    margin-bottom: 2%;
+}
+
+nav .title {
+    opacity: 0;
+    font-size: 0;
+}
+
+nav .title.hidden {
+    animation-name: navTitleHide;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+nav .title.shown {
+    animation-name: navTitleShow;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navTitleHide {
+    0% {
+        opacity: 1;
+        font-size: inherit;
+        margin-left: 0.5rem;
+    }
+    30% {
+        opacity: 0;
+        font-size: inherit;
+        margin-left: 0.5rem;
+    }
+    100% {
+        opacity: 0;
+        font-size: 0;
+        margin-left: 0;
+    }
+}
+
+@keyframes navTitleShow {
+    0% {
+        opacity: 0;
+        font-size: 0;
+        margin-left: 0;
+    }
+    70% {
+        opacity: 0;
+        font-size: inherit;
+        margin-left: 0.5rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: inherit;
+        margin-left: 0.5rem;
+    }
 }
 
 nav .github {

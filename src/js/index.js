@@ -10,6 +10,7 @@ import { createViewportSection } from "./viewport-section";
 import { createSocialContents } from "./social-contents";
 import { createFooter } from "./footer";
 import { createNavbar } from "./navbar";
+import { getNavbarTools } from "./navbar-tools";
 
 const body = document.body;
 const sectionInfo = data.data.sections;
@@ -18,6 +19,11 @@ const createMainPage = () => {
   // Header
   const header = document.createElement("header");
   const navbar = createNavbar();
+  const {
+    enableTitleAnimation,
+    disableTitleAnimation
+  } = getNavbarTools(navbar);
+
   header.appendChild(navbar);
   body.appendChild(header);
 
@@ -56,10 +62,20 @@ const createMainPage = () => {
 
   const footer = createFooter();
   body.appendChild(footer);
+
+  // Activating listeners
+  enableTitleAnimation();
+
+  return {
+    navbarTools: {
+      enableTitleAnimation,
+      disableTitleAnimation,
+    }
+  }
 };
 
 const init = () => {
-  createMainPage();
+  return createMainPage();
 };
 
 export { init };

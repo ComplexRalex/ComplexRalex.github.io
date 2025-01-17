@@ -11,7 +11,7 @@ const createNavbar = () => {
       <div class="container">
         <a class="navbar-brand" href="#${data.sections.root.id}">
           <img class="avatar" src="${avatar.url}" title="${avatar.title}" alt="${avatar.alt}" />
-          ${data["title-navbar"]}
+          <div class="title">${data["title-navbar"]}</div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#someNavbar" aria-controls="someNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

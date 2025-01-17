@@ -17,12 +17,24 @@ export const welcome = () => {
     Be careful though, because it takes some math to do it
     (every time you scroll)!
 
+    Also, you can change the navbar title behaviour by
+    using these functions:
+
+        %cnavbarTools.%cenableTitleAnimation()%c
+        %cnavbarTools.%cdisableTitleAnimation()%c
+
     %cHave fun!%c :D
 
     `,
     'font-weight: bold; color: #FF9393',
     '',
     'font-style: italic',
+    '',
+    'font-style: italic;',
+    'font-style: italic; color: #F8E67C',
+    '',
+    'font-style: italic;',
+    'font-style: italic; color: #F8E67C',
     '',
     'font-style: italic;',
     'font-style: italic; color: #F8E67C',
