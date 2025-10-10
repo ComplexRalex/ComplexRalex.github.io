@@ -1,4 +1,4 @@
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/log-oh-no.png";
 
 const createLogoImage = () => {
   const img = document.createElement("img");
