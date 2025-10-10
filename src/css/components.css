@@ -134,6 +134,21 @@ section.viewport > div {
     margin-bottom: 50px;
 }
 
+div.div-content.div-content-contact {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+div.div-content.div-content-contact div.div-content-email {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.div-content.div-content-contact div.div-content-email p {
+    margin: 0;
+}
+
 /* Social Media Card */
 
 img.img-thumb {
@@ -215,7 +230,7 @@ section.vp-contents {
 }
 
 section.vp-contact {
-    min-height: calc(100% - 180px);
+    min-height: calc(100% - 140px);
     background: rgb(21, 24, 29);
     background-image: url('../assets/img/pattern/contact.png');
     background-repeat: repeat;
@@ -242,13 +257,13 @@ section.vp-contact {
 
 footer.vp-footer {
     background: rgb(23, 21, 22);
-    min-height: 180px;
+    min-height: 140px;
     position: absolute;
 
 }
 
 img.footer-img {
-    width: 100px;
+    width: 70px;
 }
 
 /* Extra */
