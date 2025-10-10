@@ -3,7 +3,7 @@
         "title-navbar": "Alejandro Batres",
         "sections": {
             "root": {
-                "name": "Root",
+                "name": "/",
                 "id": "root",
                 "title": "This is the root"
             },
@@ -20,12 +20,12 @@
             "contact": {
                 "name": "Contact",
                 "id": "contact",
-                "title": "Are you looking for me?"
+                "title": "Trying to reach out?"
             }
         },
         "title-footer": "Alejandro Batres. 2025.",
         "avatar-navbar": {
-            "url": "./assets/img/logo.png",
+            "url": "./assets/img/log-oh-no.png",
             "title": "It's me, Ralex!",
             "alt": "My avatar (called 'Ralex')"
         },
