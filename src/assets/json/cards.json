@@ -1,8 +1,8 @@
 {
     "data": [
         {
-            "title": "Coding projects",
-            "desc": "As part of my growth as a programmer, I also have a <b>Github account</b> where I upload <b>programming projects</b> that I've done on my own and with friends. I maintain important projects like <a href='https://github.com/ComplexRalex/Completed-Games-Registers' target='_blank'><b>Completed-Games Registers (Java)</b></a> and <a href='https://github.com/ComplexRalex/BumperKartZ-VS' target='_blank'><b>Bumper KartZ VS (C++ OpenGL)</b></a>.",
+            "title": "Code repositories",
+            "desc": "As part of my growth as a programmer, I also have a <b>Github account</b> where I upload <b>programming projects</b> that I've done on my own and with friends. I maintain important projects like <a href='https://github.com/ComplexRalex/Completed-Games-Registers' target='_blank'><b>Completed-Games Registers (Java)</b></a>, <a href='https://github.com/ComplexRalex/BumperKartZ-VS' target='_blank'><b>Bumper KartZ VS (C++ & OpenGL)</b></a>, and, the biggest one so far, <a href='https://github.com/ComplexRalex/gamedev-final-project' target='_blank'><b>El Mundo de Floresta (JavaScript & Phaser 3)</b></a>, a 2D Zelda-like adventure game made with friends for our final project!",
             "image": {
                 "url": "./assets/img/card/coding2.png",
                 "title": "Screenshot of my Github account",
